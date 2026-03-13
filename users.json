@@ -1,0 +1,72 @@
+[
+  {
+    "id": "usr_r2zlgmr",
+    "username": "Антон",
+    "passwordHash": "$2b$10$aaZFurVduYH236Mar29uHOxXvIx2.Pm8Y.WQoREvhlGBgU4DUMP2K",
+    "avatar": "/avatars/avatar_usr_r2zlgmr_1773117646153.jpg",
+    "createdAt": "2026-03-10T04:40:27.221Z"
+  },
+  {
+    "id": "usr_65nqyag",
+    "username": "Андрей",
+    "passwordHash": "$2b$10$U6LANMOyh02wpv6t2dkXZ.1tz6d3ejfH5sXcn/TdbYEVtSOL0H7ui",
+    "avatar": "/avatars/avatar_Missing superscript or subscript argument{Date.now()}.png",
+    "createdAt": "2026-03-10T07:40:20.098Z"
+  },
+  {
+    "id": "usr_zxtf8o5",
+    "username": "fertas321@ya",
+    "passwordHash": "$2b$10$d.kOTONa7ZmOG6Y4KIdBE.rdoOosVb40Fb1fnwliF/M9NcLHXvf7q",
+    "avatar": "/avatars/avatar_Missing superscript or subscript argument{Date.now()}.jpg",
+    "createdAt": "2026-03-10T22:34:32.599Z"
+  },
+  {
+    "id": "usr_vlsn6tb",
+    "username": "Роман Бережной",
+    "passwordHash": "$2b$10$tTyujZEQoAI4Nfctl5rFzOlggqjzoxliChl0ze8PeRjrYdBC5LCA6",
+    "avatar": "/avatars/avatar_Missing superscript or subscript argument{Date.now()}.jpg",
+    "createdAt": "2026-03-10T23:00:08.985Z"
+  },
+  {
+    "id": "usr_qzoslec",
+    "username": "Андрей Декабрев",
+    "passwordHash": "$2b$10$QuV9E9Javy8AnmcyjDARKOt3HDVOxZOAlfi8zZn91wuc.z/uFzO/a",
+    "avatar": "/avatars/avatar_Missing superscript or subscript argument{Date.now()}.jpg",
+    "createdAt": "2026-03-11T00:27:55.284Z"
+  },
+  {
+    "id": "usr_ziv54km",
+    "username": "Ольга",
+    "passwordHash": "$2b$10$0Pk.l8yvNlOXaMkr6Ez92eYh5pvLGESwJ9VB.Kr.F9lYPkdofUp4e",
+    "avatar": "/avatars/avatar_Missing superscript or subscript argument{Date.now()}.png",
+    "createdAt": "2026-03-11T06:28:43.995Z"
+  },
+  {
+    "id": "usr_572t052",
+    "username": "Креньдель",
+    "passwordHash": "$2b$10$fVP4UiDZS7c5hOqm72AiFOQihblYsOLJ7p4zAXGGUjw0Vl5VR7Giq",
+    "avatar": "/avatars/avatar_Missing superscript or subscript argument{Date.now()}.jpg",
+    "createdAt": "2026-03-11T06:45:24.641Z"
+  },
+  {
+    "id": "usr_p8e8pil",
+    "username": "Роман",
+    "passwordHash": "$2b$10$Zvv3Y4F73yPn10xU68PFa.HQlQ5DiYduMArMUnri9p0THUzHxnFbS",
+    "avatar": "/avatars/avatar_Missing superscript or subscript argument{Date.now()}.jpg",
+    "createdAt": "2026-03-11T23:23:23.348Z"
+  },
+  {
+    "id": "usr_zdhxeoo",
+    "username": "Леша Тавр",
+    "passwordHash": "$2b$10$zePQ1B7xYD5KYXx7R1qL9e9zdTFfqg1KcCYqvxkH0wXD8psuIESrO",
+    "avatar": "/avatars/avatar_Missing superscript or subscript argument{Date.now()}.png",
+    "createdAt": "2026-03-13T02:04:14.619Z"
+  },
+  {
+    "id": "usr_ctz4hul",
+    "username": "аНДРЕЙ",
+    "passwordHash": "$2b$10$6d/2tR5QM5.HFnjCUje4I.6aKByE9ztycQ6u95TgEKCGs7DOTRKDW",
+    "avatar": "",
+    "createdAt": "2026-03-13T04:04:12.647Z"
+  }
+]
