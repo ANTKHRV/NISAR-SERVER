@@ -68,5 +68,19 @@
     "passwordHash": "$2b$10$6d/2tR5QM5.HFnjCUje4I.6aKByE9ztycQ6u95TgEKCGs7DOTRKDW",
     "avatar": "",
     "createdAt": "2026-03-13T04:04:12.647Z"
+  },
+  {
+    "id": "usr_ye6sve2",
+    "username": "Антонyy",
+    "passwordHash": "$2b$10$NAupP0sPX5PQNY6MPhHejuplixMu8rRGwcp2F9MEEIp5Ijx/7epwW",
+    "avatar": "/avatars/avatar_Missing superscript or subscript argument{Date.now()}.jpg",
+    "createdAt": "2026-03-14T03:32:53.305Z"
+  },
+  {
+    "id": "usr_yjixnp8",
+    "username": "Fedor",
+    "passwordHash": "$2b$10$CNJPFw2jty3s5YS/hb6hVeIpuTl8koQi640f1VrVb5aov6HykGjfu",
+    "avatar": "",
+    "createdAt": "2026-03-14T03:35:41.616Z"
   }
 ]

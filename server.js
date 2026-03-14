@@ -191,6 +191,42 @@ app.post('/register', async (req, res) => {
 });
 
 // Авторизация
+// Регистрация (обновлённая: принимает username, email, password)
+app.post('/register', async (req, res) => {
+  const { username, email, password } = req.body || {};
+
+  if (!username || !email || !password) {
+    return res.status(400).json({ error: 'Укажите имя пользователя, email и пароль' });
+  }
+
+  if (users.find(u => u.username === username)) {
+    return res.status(400).json({ error: 'Пользователь уже существует' });
+  }
+
+  if (users.find(u => u.email === email)) {
+    return res.status(400).json({ error: 'Email уже используется' });
+  }
+
+  const salt = await bcrypt.genSalt(10);
+  const passwordHash = await bcrypt.hash(password, salt);
+
+  const user = {
+    id: generateId(),
+    username,
+    email,
+    passwordHash,
+    avatar: '',
+    createdAt: new Date().toISOString()
+  };
+
+  users.push(user);
+  saveUsers(users);
+
+  const token = jwt.sign({ id: user.id, username: user.username, email: user.email }, JWT_SECRET, { expiresIn: '7d' });
+  res.json({ token, user: { id: user.id, username: user.username, email: user.email, avatar: user.avatar } });
+});
+
+// Авторизация (логин) — оставляем без изменений
 app.post('/login', async (req, res) => {
   const { username, password } = req.body || {};
   if (!username || !password) return res.status(400).json({ error: 'Укажите имя пользователя и пароль' });
@@ -201,15 +237,15 @@ app.post('/login', async (req, res) => {
   const ok = await bcrypt.compare(password, user.passwordHash);
   if (!ok) return res.status(400).json({ error: 'Неверный логин или пароль' });
 
-  const token = jwt.sign({ id: user.id, username: user.username }, JWT_SECRET, { expiresIn: '7d' });
-  res.json({ token, user: { id: user.id, username: user.username, avatar: user.avatar } });
+  const token = jwt.sign({ id: user.id, username: user.username, email: user.email }, JWT_SECRET, { expiresIn: '7d' });
+  res.json({ token, user: { id: user.id, username: user.username, email: user.email, avatar: user.avatar } });
 });
 
 // Получение профиля
 app.get('/profile', verifyToken, (req, res) => {
   const user = users.find(u => u.id === req.user.id);
   if (!user) return res.status(404).json({ error: 'Пользователь не найден' });
-  res.json({ id: user.id, username: user.username, avatar: user.avatar });
+  res.json({ id: user.id, username: user.username, email: user.email, avatar: user.avatar });
 });
 
 // Обновление профиля (имя пользователя и аватар)
@@ -244,4 +280,4 @@ app.use('/avatars', express.static(avatarsDir));
 // Приветственный вывод сервера
 app.listen(port, () => {
   console.log(`Сервер запущен на http://localhost:${port}`);
-})
+});
